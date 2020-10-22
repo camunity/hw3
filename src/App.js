@@ -1,15 +1,29 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Greeting from './Greeting';
+import Goodbye from './Goodbye';
+
+const timeOfDay = "Evening"
+
+renderComponents = () => {
+  if(timeOfDay === "Evening"){
+    return( 
+      <Goodbye />
+    )
+  } else{
+    return(
+      <Greeting />
+    )
+  }
+}
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          This is me changing the <code>src/App.js</code> on the adding_goodbye branch.
-        </p>
+        {renderComponents()}
         <a
           className="App-link"
           href="https://reactjs.org"
