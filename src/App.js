@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          This is me changing the <code>src/App.js</code> on my personal branch.
+          This is me changing the <code>src/App.js</code> on the adding_goodbye branch.
         </p>
         <a
           className="App-link"
